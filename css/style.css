@@ -1,0 +1,208 @@
+/* 
+* Índice
+* 0.0 - Reset
+* 1.0 - Mobile First
+* 2.0 - Fonts
+* 3.0 - Globais
+* 4.0 - Color Palette
+* 5.0 - Header
+* 6.0 - Body
+*   6.1 - Sliders
+*   6.2 - Imagery
+* 7.0 - Footer
+*/
+
+
+/*** 0.0 - Reset ***/
+* {
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+
+
+/*** 1.0 - Mobile First ***/
+
+/* hi-res laptops and desktops */
+/* Em telas com 1281 px ou menos, defina a cor de fundo para azul*/
+@media (max-width:1281px) { body {background-color: rgb(141, 141, 202);}}
+
+/* big landscape tablets, laptops, and desktops */
+@media (max-width:1025px) { body {background-color: rgb(243, 144, 105);}}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */   
+@media (max-width:801px) { body {background-color: rgb(235, 194, 13);}}
+
+ /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (max-width:600px) { body {background-color: rgb(83, 247, 7);}}
+
+/* smartphones, Android phones, landscape iPhone */
+@media (max-width:480px) { body {background-color: rgb(2, 82, 19);}}
+
+ /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+@media (max-width:320px) { body {background-color: rgb(18, 179, 243);}}
+
+
+/*** 2.0 - Fonts ***/
+
+
+/*** 3.0 - Globais ***/
+
+
+/*** 4.0 - Color Palette ***/
+
+
+/*** 5.0 - Header ***/
+
+
+/*** 6.0 - Body ***/
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: gray;
+}
+
+.container {
+    width: 80%;
+    height: 800px;
+    margin: 0 auto; /* o auto calcula a diferença de espaço restante entre a largura interna e externa*/
+   
+    background-color: white;
+
+}
+
+.menu{}
+
+.portifolio{}
+
+.repositorio{}
+
+
+
+
+/*** 7.0 - Footer ***/
+
+
+
+
+/*------------------------------------------------------------------*/
+
+
+/* BEM - Bloco, Elemento e Modificador  
+
+# Blocos são componentes independentes, reutilizáveis e geralmente 
+maiores de uma página da web. Eles podem ter modificadores e conter 
+elementos.
+Podemos contar partes maiores em uma página da web como 
+<header>, <nav>, <section>, <form>, <article>, <footer> 
+como exemplos de blocos.
+
+A barra de navegação do Youtube web pode ser usado como bloco 
+e ser declarado como: 
+
+.youtube-header
+
+
+# Elementos são filhos de blocos. Um elemento pode ter apenas 1 bloco 
+pai e não pode ser usado independentemente fora desse bloco.
+
+A nomenclatura de um elemento deve começar com seu nome de bloco pai, 
+2 sublinhados depois dele e terminar com seu próprio nome:
+
+
+<header class = " youtube-header ">
+   <img class = " youtube-header__logo " />
+   <div class = " youtube-header__search "> </div>
+    <ul class = " youtube-header__list ">
+    <li class = " youtube-header__item > </li>
+    <li class = " youtube-header__item > </li>
+</ul>
+</header>
+
+-------------------------------------------------------------------
+
+Dica 1:
+Como youtube-header é o bloco, a convenção de nomenclatura de seus 
+elementos pode ser escrita assim:
+
+.youtube-header__logo { 
+  // regras 
+}
+.youtube-header__search { 
+  // regras 
+}
+.youtube-header__list { 
+  // regras 
+}
+.youtube-header__item { 
+  // regras 
+}
+
+----------------------------------------------------------------------
+
+Dica 2:
+Ou na versão Sass.
+No Sass, & toma o lugar do nome dos pais.
+
+.youtube-header { 
+  // rules 
+  & __ logo { 
+    // regras
+  }
+  & __ pesquisar { 
+    // regras 
+  }
+  & __ list { 
+    // regras 
+  }
+  & __ item { 
+    // regras 
+  } 
+}
+
+------------------------------------------------------------------------
+
+# Modificadores representam diferentes estados ou estilos de classes. 
+Eles podem ser usados ​​para blocos ou elementos.
+Em HTML, um modificador deve ser usado junto com seu Bloco / Elemento, 
+como recursos adicionais:
+
+<form class="form form--large">
+  <button class="form__button form__button--red"></button>
+</form>
+
+
+A nomenclatura de um modificador deve começar com seu nome de bloco pai, 
+2 traços depois dele e terminar com seu próprio nome.
+
+Block -- Modifier:
+
+.form {
+  // regras
+  .form--large {}  // Block modifiers
+  .form--small {}
+}
+
+Element -- Modifier:
+
+.form {
+  // regras
+  .form__button {
+    // regras
+    
+    .form__button--red {}  // Block__Element--Modifiers
+    .form__button--green {}
+   }
+}
+
+
+
+*/
