@@ -46,16 +46,17 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.95em;
-    background-color:rgb(165, 163, 163);
+    background-color:none;
 }
 
 .container {
     
-    width: 80%;
+    width: 60%;
     height: 800px;
 
     background-color: white;
     border: 1px solid rgb(17, 1, 1);
+   
 
    /* 4 elementos para centralizar uma div de forma Horizontal e Vertical */
     position: absolute;
@@ -66,32 +67,35 @@ body {
 
 .menu{
   background-color: lightblue;
-  width: 20%;
+  width: 23%;
   height: 100%;
   left: auto;
   position: absolute;
-  padding: 15px;
+  padding: 15px 0px 0px 30px;
 }
 
 .pages {
   background-color: white;
-  width: 80%;
+  width: 77%;
   height: 100%;
-  left: 20%;
+  left: 23%;
   position: absolute;
   overflow: auto;
   padding: 30px 15px 0px 20px;
 }
 
-p {
+p.menu2 {
   white-space: pre-line;
 }
 
+
+
 div.card {
-  width: 30%;
-  height: 250px;
+  width: 98%;
+  height: 300px;
   border: 1px solid black;
-  text-align: center;
+  text-align: left;
+  padding: 5px;
   
   
 }
@@ -105,8 +109,21 @@ span.imagefake {
   background-color: rgb(211, 208, 214);
   color: white;
   float: left;
+  margin-bottom: 5px;
+
 }
 
+span.stack {
+  border: 1px solid rgb(0, 140, 255);
+  border-radius: 3px;
+  padding: 2px;
+  font-size: 12px;
+
+
+}
+
+
+p.card2 {white-space: pre-line;}
 
 /*** 7.0 - Footer ***/
 
