@@ -46,16 +46,17 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 0.95em;
-    background-color:none;
+    color:#4B4A54 ;
+    background-color: #A3CFCD;
+    
 }
 
 .container {
     
     width: 60%;
-    height: 800px;
-
+    height: 100%;
     background-color: white;
-    border: 1px solid rgb(17, 1, 1);
+    /* border: 1px solid rgb(17, 1, 1); */
    
 
    /* 4 elementos para centralizar uma div de forma Horizontal e Vertical */
@@ -66,12 +67,13 @@ body {
 }
 
 .menu{
-  background-color: lightblue;
+  background-color: white;
   width: 23%;
   height: 100%;
   left: auto;
   position: absolute;
   padding: 15px 0px 0px 30px;
+  border-right: 1px solid black;
 }
 
 .pages {
@@ -93,7 +95,7 @@ p.menu2 {
 div.card {
   width: 98%;
   height: 300px;
-  border: 1px solid black;
+  border-bottom : 1px solid black;
   text-align: left;
   padding: 5px;
   
@@ -118,12 +120,58 @@ span.stack {
   border-radius: 3px;
   padding: 2px;
   font-size: 12px;
-
-
 }
 
 
 p.card2 {white-space: pre-line;}
+
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  }
+
+ul {
+  
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    
+}
+
+li {
+  padding: 3px 2px;
+}
+
+li a {
+  display: block;
+  text-decoration: none;
+  color:#4B4A54;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+.button {
+background-color: white;
+color: #4B4A54;
+border: 1px solid;
+padding: 10px 50px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 10px;
+cursor: pointer;
+
+}
 
 /*** 7.0 - Footer ***/
 
